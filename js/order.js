@@ -1,8 +1,16 @@
 var myScroll;
   window.onload = function(){
-    myScroll = new iScroll('hone', { checkDOMChanges: true });
-    myScroll = new iScroll('Haveorder', { checkDOMChanges: true });
+    myScroll = new iScroll('hone', { 
+      checkDOMChanges: true ,
+      preventDefault:false
+    });
+    myScroll = new iScroll('Haveorder', { 
+      checkDOMChanges: true,
+      preventDefault:false
+    });
   }
+
+
 
   $(function(){
     $('.nav-list ul').on('click', 'li', function() {
