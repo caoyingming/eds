@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/Hydrosphere.css">
+  <title>水圈</title>
+</head>
+<body>
+<div id="container" class="flex-ver">
+  <header class="flex-hor">
+      <a class="return" id="return">返回</a>
+      <h1 class="flex-1" id="lable">水圈</h1>
+  </header>
+  <div class="main flex-ver flex-1" id="main">
+
+    <div class="home_list">
+      <ul class="flex-hor">
+        <li>之前消息(<span>30</span>)</li>
+        <li class="on">今日消息(<span>7</span>)</li>
+      </ul>
+    </div>
+    <div class="home flex-1" id="home">
+        <section class="sectiono" id="main_h">
+          <div>
+            <div class="flex-hor home-relation">
+              <ul>
+                <li><span>2016/11/12</span><span>11:30</span></li>
+                <li><i><img src="images/t_03.png" alt=""> </i>联系人</li>
+                <li><i><img src="images/dz_03.png" alt=""> </i>通朝大街</li>
+              </ul>
+              <div class="phone">
+                  <p><img src="images/tim_03.png" alt=""></p>
+              </div>
+            </div>
+            <div class="flex-hor home-relation">
+              <ul>
+                <li><span>2016/11/12</span><span>11:30</span></li>
+                <li><i><img src="images/t_03.png" alt=""> </i>联系人</li>
+                <li><i><img src="images/dz_03.png" alt=""> </i>通朝大街</li>
+              </ul>
+              <div class="phone">
+                  <p><img src="images/tim_03.png" alt=""></p>
+              </div>
+            </div>
+            <div class="flex-hor home-relation">
+              <ul>
+                <li><span>2016/11/12</span><span>11:30</span></li>
+                <li><i><img src="images/t_03.png" alt=""> </i>联系人</li>
+                <li><i><img src="images/dz_03.png" alt=""> </i>通朝大街</li>
+              </ul>
+              <div class="phone">
+                  <p><img src="images/tim_03.png" alt=""></p>
+              </div>
+            </div>
+            <div class="flex-hor home-relation">
+              <ul>
+                <li><span>2016/11/12</span><span>11:30</span></li>
+                <li><i><img src="images/t_03.png" alt=""> </i>联系人</li>
+                <li><i><img src="images/dz_03.png" alt=""> </i>通朝大街</li>
+              </ul>
+              <div class="phone">
+                  <p><img src="images/tim_03.png" alt=""></p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          2
+        </section>
+
+    </div>
+
+  </div>
+  <footer>
+    <ul class="flex-hor" id="footernav">
+      <li><a href="pahe.html" title="水站订单管理中心" ><img src="images/homepage.png" alt=""><br><small>首页</small></a></li>
+      <li><a href="order.html" title="订单"><img src="images/orderform.png" alt=""><br><small>订单</small></a></li>
+      <li><a href="#" title="水圈" class="on"><img src="images/titlebar3.png" alt=""><br><small>水圈</small></a></li>
+      <li><a href="qrcode.html" title="二维码"><img src="images/qrcode.png" alt=""><br><small>二维码</small></a></li>
+    </ul>
+
+  </footer>
+</div>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/iscroll4.js"></script>
+<script type="text/javascript">
+    var myScroll;
+    window.onload = function(){
+      myScroll = new iScroll('main_h', { checkDOMChanges: true });
+    }
+
+  $(function(){
+  	$('.home_list ul li').on('click', function () {
+      var idx = $(this).index();
+      $(this).addClass('on').siblings().removeClass('on');
+  		$('.home section').eq(idx).addClass('sectiono').siblings().removeClass('sectiono');
+      console.log(idx);
+   	})
+  })
+
+
+
+
+
+
+  </script>
+</body>
+</html>

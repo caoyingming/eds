@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>易点水</title>
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/peha.css">
+</head>
+<body>
+  <div id="container" class="flex-ver">
+    <header class="flex-hor">
+        <a class="return" id="return">返回</a>
+        <h1 class="flex-1" id="lable">水站订单管理中心</h1>
+    </header>
+    <div class="main flex-1">
+      <section class="home" id="home">
+        <div>
+          <div class="home_h">
+          <!-- 订单 -->
+          <div class="home_page flex-hor" onclick="window.location.href='order.html'">
+              <div class="page-img">
+                  <div class="map_img">
+                    <div class="img_one">
+                      <img src="images/message.png" alt="">
+                    </div>
+                  </div>
+              </div>
+              <div class="page-text">
+                <div class="page_oder">
+                  <ul>
+                    <li><h3>订单</h3></li>
+                    <li>新订单 <span>12</span></li>
+  									<li>未分派 <span>20</span></li>
+  									<li>今日已收 ￥<span>200.00<span></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+
+          <!-- 商品 -->
+          <div class="home_page flex-hor" onclick="window.location.href='putaway.html'">
+              <div class="page-text">
+                <div class="page_oder">
+                  <ul>
+                    <li><h3>商品</h3></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="page-img">
+                  <div class="map_img">
+                    <div class="img_one">
+                      <img src="images/commodity.png" alt="">
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- 水圈 -->
+          <div class="home_page flex-hor" onclick="window.location.href='Hydrosphere.html'">
+            <div class="page-img">
+                  <div class="map_img">
+                    <div class="img_one">
+                      <img src="images/hyd7.png" alt="">
+                    </div>
+                  </div>
+              </div>
+              <div class="page-text">
+                <div class="page_oder">
+                  <ul>
+                    <li><h3>水圈</h3></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+
+          <!-- 二维码 -->
+          <div class="home_page flex-hor">
+            <div class="page-text">
+              <div class="page_oder">
+                <ul>
+                  <li><h3>统计</h3></li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-img">
+                  <div class="map_img">
+                    <div class="img_one">
+                      <img src="images/statistics_03.png" alt="">
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="fov">2</section>
+      <section>3</section>
+      <section>4</section>
+    </div>
+    <footer>
+      <ul class="flex-hor" id="footernav">
+        <li><a href="#" title="水站订单管理中心" class="on"><img src="images/titlebar1.png" alt=""><br><small>首页</small></a></li>
+        <li><a href="order.html" title="订单"><img src="images/orderform.png" alt=""><br><small>订单</small></a></li>
+        <li><a href="Hydrosphere.html" title="水圈"><img src="images/hydrosphere.png" alt=""><br><small>水圈</small></a></li>
+        <li><a href="qrcode.html" title="二维码"><img src="images/qrcode.png" alt=""><br><small>二维码</small></a></li>
+      </ul>
+      <p class="mark" id="mark"></p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/iscroll.js"></script>
+  <script type="text/javascript" src="js/zepto.js"></script>
+  <script type="text/javascript" src="js/peha.js"></script>
+</body>
+</html>

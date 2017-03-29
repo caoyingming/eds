@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>上架商品</title>
+	<link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/putaway.css">
+
+</head>
+<body>
+	<div id="container" class="flex-ver">
+		<header class="flex-hor">
+		    <a class="return" id="return" onclick="window.location.href='pahe.html'">返回</a>
+		    <h1 class="flex-1" id="lable">上架商品</h1>
+		</header>
+  	     <div class="main flex-1">
+  	     	<div class="mian-product">
+  	     		<div class="seek">
+  	     			<input type="search" name="">
+  	     		</div>
+  	     		<div class="refer">
+	  	     		<div class="referto flex-hor">
+	  	     			<div class="referto-img">
+	  	     				<img src="images/xxdd_03.png" alt="">
+	  	     			</div>
+	  	     			<div><h2>新的产品</h2></div>
+	  	     		</div>
+
+	  	     		<div class="referto flex-hor" onclick="window.location.href='Products.html'">
+	  	     			<div class="referto-img">
+	  	     				<img src="images/ccp_03.png" alt="">
+	  	     			</div>
+	  	     			<div><h2>产品库</h2></div>
+	  	     		</div>
+
+  	     		</div>
+  	     	</div>
+
+			<div class="wrapper">
+		        <div class="cont flex-hor">
+			        <dl class="flex-hor">
+			        	<dt>
+			        		<img src="images/list_03.png" alt="">
+			        	</dt>
+			        	<dd class="flex-1 flex-hor">
+			        		<div class="flex-1">
+			        			<span>农夫山泉</span><br>
+			        			<em>品类：纯净水 18.9L</em>
+			        		</div>
+			        		<div class="lisy_no">
+			        			<p>￥20.00</p>
+			        		</div>
+
+			        	</dd>
+			        </dl>
+			        <div class="delete">
+				        <i class="iconfont icon-shanchu" onclick="window.location.href='compile.html'">编辑产品</i>
+				        <span class="remov">删除</span>
+
+			        </div>
+		        </div>
+		    </div>
+
+		    <div class="wrapper">
+		        <div class="cont flex-hor">
+			        <dl class="flex-hor">
+			        	<dt>
+			        		<img src="images/list_03.png" alt="">
+			        	</dt>
+			        	<dd class="flex-1 flex-hor">
+			        		<div class="flex-1">
+			        			<span>哇哈哈</span><br>
+			        			<em>品类：纯净水 18.9L</em>
+			        		</div>
+			        		<div class="lisy_no">
+			        			<p>￥20.00</p>
+			        		</div>
+
+			        	</dd>
+			        </dl>
+			        <div class="delete">
+				        <i class="iconfont icon-shanchu">编辑产品</i>
+				        <span class="remov">删除</span>
+
+			        </div>
+		        </div>
+		    </div>
+
+		    <div class="wrapper">
+		        <div class="cont flex-hor">
+			        <dl class="flex-hor">
+			        	<dt>
+			        		<img src="images/list_03.png" alt="">
+			        	</dt>
+			        	<dd class="flex-1 flex-hor">
+			        		<div class="flex-1">
+			        			<span>商品</span><br>
+			        			<em>品类：纯净水 18.9L</em>
+			        		</div>
+			        		<div class="lisy_no">
+			        			<p>￥20.00</p>
+			        		</div>
+
+			        	</dd>
+			        </dl>
+			        <div class="delete">
+				        <i class="iconfont icon-shanchu">编辑产品</i>
+				        <span class="remov">删除</span>
+
+			        </div>
+		        </div>
+		    </div>
+
+
+  	     </div>
+	</div>
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/putaway.js"></script>
+	<script type="text/javascript">
+
+	$(function(){
+		$('.wrapper').on("click",".remov",function(){
+			$(this).parents(".wrapper").remove();
+		})
+	})
+
+
+	</script>
+
+</body>
+</html>

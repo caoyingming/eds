@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" href="css/html.css">
+</head>
+<body>
+<div class="warp flex-ver">
+  <ul>
+    <li class="part flex-hor">
+      <div class="one">
+        <dl class="flex-hor">
+          <dt>图片</dt>
+          <dd>文字</dd>
+        </dl>
+      </div>
+      <div class="flex-hor two">
+        <a>编辑</a>
+        <span class="removeli">删除</span>
+      </div>
+    </li>
+    <li class="part flex-hor">
+      <div class="one">
+        <dl class="flex-hor">
+          <dt>图片</dt>
+          <dd>文字</dd>
+        </dl>
+      </div>
+      <div class="flex-hor two">
+        <a>编辑</a>
+        <span class="removeli">删除</span>
+      </div>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="js/fx.js"></script>
+<script type="text/javascript">
+document.addEventListener('touchmove',function(event) {
+	event.preventDefault(e);
+})
+// function stopDefault(e) { 
+//     //阻止默认浏览器动作(W3C) 
+//     if ( e && e.preventDefault ) 
+//         e.preventDefault(); 
+//     //IE中阻止函数器默认动作的方式 
+//     else
+//         window.event.returnValue = false; 
+//     return false; 
+// }  
+// stopDefault()
+
+$(function(){
+  $('.warp').on("swipeLeft",".part",function(){
+    $(this).animate({marginLeft:'-5rem'},200,'linear').siblings('.part').animate({marginLeft:'0rem'},200,'linear')
+  });
+  $('.warp').on("swipeRight",".part",function(){
+    $(this).animate({marginLeft:'0rem'},200,'linear');
+  });
+  $('.warp').on("tap",".part .removeli",function(){
+    $(this).parents(".part").remove();
+  });
+});
+
+</script>
+</body>
+</html>

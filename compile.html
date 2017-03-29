@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>编辑产品</title>
+	<link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/compile.css">
+</head>
+<body>
+	<div id="container" class="flex-ver">
+		 <header class="flex-hor">
+	        <a class="return" id="return">返回</a>
+	        <h1 class="flex-1" id="lable">编辑产品</h1>
+        </header>
+    <div class="main flex-1">
+        <div class="compile_list">
+	    	<ul>
+	    		<li>
+	    			<dl class="flex-hor">
+	    				<dt>
+	    					<img src="images/list_03.png" alt="">
+	    				</dt>
+	    				<dd>
+	    					<div class="cont">
+						        <input type="checkbox" id="radio" name="switch">
+						        <label for="radio" class="radio">
+						            <span class="circle"></span>
+						            <span class="text on"></span>
+						            <span class="text off"></span>
+						        </label>
+						    </div>
+	    				</dd>
+	    			</dl>
+	    		</li>
+	    		<li>
+	    			<div>
+	    				<span>产品：</span><input type="text" placeholder="农夫山泉">
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<div>
+	    				<span>规格：</span><input type="text" placeholder="18.9L">
+	    			</div>
+	    		</li>
+	    		<li >
+	    			<div class="flex-hor">
+	    				<span>分类：</span>
+	    				<div class="pull-down">
+	    					<div class="select flex-hor">
+							 <span class="text_left">请选择</span>
+							 <span class="arrow_right"></span> 
+							 </div>
+							 <ol class="list">
+							 <li>矿泉水</li>
+							 <li>农夫山泉</li>
+							 <li>哇哈哈</li>
+							 <li>矿泉水</li> 
+							 </ol>
+	    				</div>
+	    				
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<div>
+	    				<span>价格：</span><input type="text" placeholder="￥20">
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<div class="flex-hor">
+	    				<span>分类：</span>
+	    				<div class="pull-down">
+	    					<div class="select flex-hor">
+							 <span class="text_left">请选择</span>
+							 <span class="arrow_right"></span> 
+							 </div>
+							 <ol class="list">
+							 <li>矿泉水</li>
+							 <li>农夫山泉</li>
+							 <li>哇哈哈</li>
+							 <li>矿泉水</li> 
+							 </ol>
+	    				</div>
+	    				
+	    			</div>
+	    		</li>
+	    	</ul>
+    	</div>
+    </div>
+
+    <footer>
+    	<a href="putaway.html">保存更改</a>
+    </footer>
+	</div>
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript">
+	$(function(){
+      $('.text_left').click(function(e){
+        $(this).parent().next().toggle();
+        e.stopPropagation();
+        $('body').click(function(){
+          $('.list').hide();
+       })
+       })
+       $('.list li').click(function(){
+         $(this).parents('.pull-down').find('.text_left').text(($(this).text())); 
+       }) 
+     })
+	</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>周期详情</title>
+	<link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/period.css">
+</head>
+<body>
+	<div id="container" class="flex-ver">
+		<header class="flex-hor">
+		      <a class="return" id="return" onclick="window.location.href='order.html'">返回</a>
+		      <h1 class="flex-1" id="lable">订单列表</h1>
+		  </header>
+		  <div class="main flex-1" id="main">
+				<div>
+		  	<div class="home">
+		  		<div class="variety">
+		  			<ul>
+		  				<li class="flex-hor">
+		  					<div class="flex-1 data">
+		  						<span>2016/2/16<i>11:30</i></span>
+
+		  					</div>
+		  					<div class="ticket">
+		  						<em>单次现金</em>
+		  					</div>
+		  				</li>
+		  				<li class="flex-hor">
+		  					<div class="flex-1 breed">
+		  						<h3>农夫山泉</h3>
+		  						<span>纯净水1桶 <i>18.9L</i></span>
+		  					</div>
+		  					<div class="watercoupon">
+		  						<a href="#"><small>￥</small>2000<small>.00</small></a>
+		  					</div>
+		  				</li>
+
+		  			</ul>
+		  		</div>
+
+		  		<div class="relation">
+		  			<ul>
+		  				<li><i><img src="images/userls_03.png" alt=""></i><a href="#">陈苏女士</a></li>
+		  				<li><i><img src="images/locationls_03.png" alt=""></i><a href="#">回龙观</a></li>
+		  				<li class="flex-hor"><div class="flex-1 relation_li"><i><img src="images/phomels_03.png" alt=""></i><a href="#">11111111</a></div>|<span><img src="images/dls_03.png" alt=""></span></li>
+		  				<li>配送<a href="#" class="color">未配送</a></li>
+		  			</ul>
+		  		</div>
+		  	</div>
+
+		  	<div class="history">
+					<h3>历史订单<i><img src="images/xjt_03.png" alt=""></i></h3>
+		  		<ul>
+				    <li>
+				    	<div class="history-list flex-hor">
+				    		<div class="flex-1">
+				    			<div class="time">2012/2/15 &nbsp<i>11:30</i> <em>单次现金</em></div>
+				    			<div class="flex-hor time_div"><h4>农夫山泉</h4>&nbsp <span>纯净水1桶</span>&nbsp<sub>18.9L</sub></div>
+				    		</div>
+				    		<div class="state">
+				    			<span>已支付</span>
+				    		</div>
+				    	</div>
+				    </li>
+				     <li>
+				    	<div class="history-list flex-hor">
+				    		<div class="flex-1">
+				    			<div class="time">2012/2/15 &nbsp<i>11:30</i> <em>单次现金</em></div>
+				    			<div class="flex-hor time_div"><h4>农夫山泉</h4>&nbsp <span>纯净水1桶</span>&nbsp<sub>18.9L</sub></div>
+				    		</div>
+				    		<div class="state">
+				    			<span>已支付</span>
+				    		</div>
+				    	</div>
+				    </li>
+				     <li>
+				    	<div class="history-list flex-hor">
+				    		<div class="flex-1">
+				    			<div class="time">2012/2/15 &nbsp<i>11:30</i> <em>单次现金</em></div>
+				    			<div class="flex-hor time_div"><h4>农夫山泉</h4>&nbsp <span>纯净水1桶</span>&nbsp<sub>18.9L</sub></div>
+				    		</div>
+				    		<div class="state">
+				    			<span>已支付</span>
+				    		</div>
+				    	</div>
+				    </li>
+				     <li>
+				    	<div class="history-list flex-hor">
+				    		<div class="flex-1">
+				    			<div class="time">2012/2/15 &nbsp<i>11:30</i> <em>单次现金</em></div>
+				    			<div class="flex-hor time_div"><h4>农夫山泉</h4>&nbsp <span>纯净水1桶</span>&nbsp<sub>18.9L</sub></div>
+				    		</div>
+				    		<div class="state">
+				    			<span>已支付</span>
+				    		</div>
+				    	</div>
+				    </li>
+				    <li>666</li>
+						<li>666</li>
+						<li>666</li>
+						<li>666</li>
+						<li>666</li>
+				</ul>
+		  	</div>
+			</div>
+		  </div>
+		  <footer>
+		  	<a href="#">立即接单</a>
+		  </footer>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/iscroll4.js"></script>
+	<script type="text/javascript">
+	  var myScroll
+	  function loaded() {
+					myScroll = new iScroll('main');
+	  }
+		window.addEventListener("DOMContentLoaded",loaded,false);
+		$(".history h3").click(function(){
+		  $(".history ul li").toggle();
+			myScroll.refresh();
+		});
+	</script>
+</body>
+</html>

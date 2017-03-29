@@ -1,0 +1,39 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.warp{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.warp ul{
+  width: 100%;
+}
+.warp ul li{
+  width: 100%;
+  flex-wrap:nowrap;
+  position: relative;
+}
+.warp ul li .one{
+  width: 100%;
+  height: 8rem;
+  border-bottom: 2px solid #000;
+
+}
+.warp ul li .two{
+  position: absolute;
+  right: -5rem;
+  width: 5rem;
+  height: 8rem;
+  background: #ccc;
+  /*display: none;*/
+}
+.warp ul li .two i{
+  color: red;
+}
+/*.warp ul li dl{
+  width: 100%;
+  height: 8rem;
+}*/
