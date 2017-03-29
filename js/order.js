@@ -2,11 +2,19 @@ var myScroll;
   window.onload = function(){
     myScroll = new iScroll('hone', { 
       checkDOMChanges: true ,
-      preventDefault:false
+      preventDefault:false,
+      snap:true,
+      momentum:false,
+      hScrollbar:false,
+      vScrollbar: false
     });
     myScroll = new iScroll('Haveorder', { 
       checkDOMChanges: true,
-      preventDefault:false
+      preventDefault:false,
+      snap:true,
+      momentum:false,
+      hScrollbar:false,
+      vScrollbar: false
     });
   }
 
