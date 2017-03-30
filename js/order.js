@@ -1,4 +1,4 @@
-var myScroll;
+/*var myScroll;
   window.onload = function(){
     myScroll = new iScroll('hone', { 
       checkDOMChanges: true ,
@@ -16,7 +16,8 @@ var myScroll;
       hScrollbar:false,
       vScrollbar: false
     });
-  }
+  }*/
+
 
 
 

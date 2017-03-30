@@ -10,7 +10,7 @@
   
 
 </head>
-<body>
+<body onload="loaded()">
 <div id="container" class="flex-ver">
   <header class="flex-hor">
       <a class="return" id="return" onclick="window.location.href='pahe.html'">返回</a>
@@ -28,7 +28,7 @@
     <div id="tap_list" class="flex-1">
 
       <section class="sectiono" id="hone">
-        <div class="padd">
+        <div class="padd" id="scroller">
           <div class="ticket" onclick="window.location.href='list.html'">
             <div class="ticket_time flex-hor">
               <div class="time_nav flex-1">2017/2/20 <i>11:56</i></div>
@@ -204,8 +204,9 @@
 </div>
  
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/iscroll4.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
 <script type="text/javascript" src="js/order.js"></script>
+<script type="text/javascript" src="js/demoUtils.js"></script>
 <script type="text/javascript" src="js/dialog.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -220,6 +221,20 @@ $(function(){
   })
 })
  
+    
+var myScroll;
+
+function loaded () {
+  myScroll = new IScroll('#hone', { mouseWheel: true, click: true });
+}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+  capture: false,
+  passive: false
+} : false);
+
+
 </script>
+
+
 </body>
 </html>
