@@ -27,8 +27,8 @@
 
     <div id="tap_list" class="flex-1">
 
-      <section class="sectiono" id="hone">
-        <div class="padd" id="scroller">
+      <section class="sectiono" id="hone" style="height: 500px">
+        <div class="padd" id="scroller" style="height: 500px">
           <div class="ticket" onclick="window.location.href='list.html'">
             <div class="ticket_time flex-hor">
               <div class="time_nav flex-1">2017/2/20 <i>11:56</i></div>
@@ -225,7 +225,7 @@ $(function(){
 var myScroll;
 
 function loaded () {
-  myScroll = new IScroll('#hone', { mouseWheel: true, click: true });
+  myScroll = new IScroll('#hone');
 }
 
 
