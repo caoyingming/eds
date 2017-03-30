@@ -227,10 +227,7 @@ var myScroll;
 function loaded () {
   myScroll = new IScroll('#hone', { mouseWheel: true, click: true });
 }
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-  capture: false,
-  passive: false
-} : false);
+
 
 
 </script>
