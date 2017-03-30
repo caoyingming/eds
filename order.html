@@ -27,7 +27,7 @@
 
     <div id="tap_list" class="flex-1">
 
-      <section class="sectiono" id="hone">
+      <section class="sectiono" id="wrapper">
         <div class="padd" id="scroller">
           <div class="ticket" onclick="window.location.href='list.html'">
             <div class="ticket_time flex-hor">
@@ -225,8 +225,13 @@ $(function(){
 var myScroll;
 
 function loaded () {
-  myScroll = new IScroll('#hone');
+  myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
 }
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+  capture: false,
+  passive: false
+} : false);
+
 
 
 
